@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>أعسال المملكة | عسل نحل طبيعي 100%</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- شريط العروض -->
@@ -33,55 +32,83 @@
   </header>
 
   <!-- القسم الرئيسي -->
-  <section id="hero">
+    <section id="hero">
     <h2>عسل نحل طبيعي 100%</h2>
     <p>بدون تغذية سكرية إطلاقًا</p>
+
+    <div class="ayah-box">
+      <p class="ayah">﴿ يَخْرُجُ مِن بُطُونِهَا شَرَابٌ مُّخْتَلِفٌ أَلْوَانُهُ فِيهِ شِفَاءٌ لِّلنَّاسِ ۗ ﴾</p>
+      <p class="ayah-source">[سورة النحل: 69]</p>
+    </div>
+
     <a href="#products">شوف أنواع العسل</a>
   </section>
+    <!-- فاصل قطرات العسل -->
+  <div class="honey-divider" aria-hidden="true">
+    <svg class="honey-wave" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0 L1200,0 L1200,40
+               C1100,100 1050,20 950,60
+               C850,100 800,30 700,70
+               C600,110 550,30 450,65
+               C350,100 300,25 200,60
+               C100,95 50,40 0,70 Z"/>
+    </svg>
+
+    <span class="drip d1"></span>
+    <span class="drip d2"></span>
+    <span class="drip d3"></span>
+    <span class="drip d4"></span>
+    <span class="drip d5"></span>
+  </div>
 
   <!-- المنتجات -->
   <section id="products">ٍ
     <h2>جميع أنواع الأعسال</h2>
 
-    <div class="product">
-  <img src="images/mawaleh.jpg" alt="عسل موالح" onerror="this.style.display='none'">
-  <h3>عسل موالح</h3>
-  <p>السعر: اتصل لمعرفة السعر</p>
-  <a class="order-btn" href="https://wa.me/201093521137?text=أريد%20طلب%20عسل%20موالح" target="_blank">اطلب هذا النوع</a>
-</div>
+       <div class="product">
+        <span class="badge">وفّر 40 جنيه</span>
+      <img src="images/mawaleh.jpg" alt="عسل موالح" onerror="this.style.display='none'">
+      <h3>عسل موالح</h3>
+      <p class="price"><del>320</del> 280 جنيه / كيلو</p>
+      <a class="order-btn" href="https://wa.me/201093521137?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B9%D8%B3%D9%84%20%D9%85%D9%88%D8%A7%D9%84%D8%AD" target="_blank">اطلب هذا النوع</a>
+    </div>
 
-<div class="product">
+    <div class="product">
+      <span class="badge">وفّر 30 جنيه</span>
       <img src="images/bersim.jpg" alt="عسل برسيم" onerror="this.style.display='none'">
       <h3>عسل برسيم</h3>
-      <p>السعر: اتصل لمعرفة السعر</p>
+      <p class="price"><del>250</del> 220 جنيه / كيلو</p>
       <a class="order-btn" href="https://wa.me/201093521137?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B9%D8%B3%D9%84%20%D8%A8%D8%B1%D8%B3%D9%8A%D9%85" target="_blank">اطلب هذا النوع</a>
     </div>
 
     <div class="product">
+      <span class="badge">وفّر 40 جنيه</span>
       <img src="images/bardaqoush.jpg" alt="عسل بردقوش" onerror="this.style.display='none'">
       <h3>عسل بردقوش</h3>
-      <p>السعر: اتصل لمعرفة السعر</p>
+      <p class="price"><del>340</del> 300 جنيه / كيلو</p>
       <a class="order-btn" href="https://wa.me/201093521137?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B9%D8%B3%D9%84%20%D8%A8%D8%B1%D8%AF%D9%82%D9%88%D8%B4" target="_blank">اطلب هذا النوع</a>
     </div>
 
     <div class="product">
+      <span class="badge">وفّر 40 جنيه</span>
       <img src="images/yansoon.jpg" alt="عسل يانسون" onerror="this.style.display='none'">
       <h3>عسل يانسون</h3>
-      <p>السعر: اتصل لمعرفة السعر</p>
+      <p class="price"><del>340</del> 300 جنيه / كيلو</p>
       <a class="order-btn" href="https://wa.me/201093521137?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B9%D8%B3%D9%84%20%D9%8A%D8%A7%D9%86%D8%B3%D9%88%D9%86" target="_blank">اطلب هذا النوع</a>
     </div>
 
- <div class="product">
+    <div class="product">
+      <span class="badge">وفّر 40 جنيه</span>
       <img src="images/habba.jpg" alt="عسل حبة البركة" onerror="this.style.display='none'">
       <h3>عسل حبة البركة</h3>
-      <p>السعر: اتصل لمعرفة السعر</p>
+      <p class="price"><del>340</del> 300 جنيه / كيلو</p>
       <a class="order-btn" href="https://wa.me/201093521137?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B9%D8%B3%D9%84%20%D8%AD%D8%A8%D8%A9%20%D8%A7%D9%84%D8%A8%D8%B1%D9%83%D8%A9" target="_blank">اطلب هذا النوع</a>
     </div>
 
     <div class="product">
       <img src="images/sidr.jpg" alt="عسل سدر جبلي" onerror="this.style.display='none'">
       <h3>عسل سدر جبلي</h3>
-      <p>السعر: اتصل لمعرفة السعر</p>
+      <span class="order-btn disabled">يتوفر قريبًا</span>
       <a class="order-btn" href="https://wa.me/201093521137?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B9%D8%B3%D9%84%20%D8%B3%D8%AF%D8%B1%20%D8%AC%D8%A8%D9%84%D9%8A" target="_blank">اطلب هذا النوع</a>
     </div>
   </section>
@@ -134,5 +161,35 @@
       <a href="https://wa.me/201031471183" target="_blank">يوسف سويلم | Yousef Swellam</a>
     </p>
   </footer>
+   <script>
+    // العناصر اللي عايزينها تظهر تدريجي
+    const items = document.querySelectorAll(
+      '.product, .why-item, #about, .ayah-box'
+    );
+
+    items.forEach(el => el.classList.add('reveal'));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+
+          // بعد ما الحركة تخلص نشيل الكلاس عشان الـ hover يرجع طبيعي
+          setTimeout(() => {
+            entry.target.classList.remove('reveal', 'visible');
+          }, 900);
+
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    items.forEach(el => observer.observe(el));
+  </script>
+    <a class="whatsapp-float" href="https://wa.me/201093521137" target="_blank" aria-label="تواصل عبر واتساب">
+    <svg viewBox="0 0 32 32" width="32" height="32" fill="#fff">
+      <path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-2c1.8 1 3.8 1.5 5.9 1.5 6.9 0 12.6-5.6 12.6-12.5S22.900 3 16 3zm0 22.800c-1.900 0-3.700-.5-5.300-1.500l-.4-.2-4.400 1.200 1.200-4.300-.3-.4c-1.100-1.700-1.600-3.600-1.600-5.600C5.200 9.600 10 4.900 16 4.900s10.800 4.700 10.800 10.600S22 25.800 16 25.800zm5.900-7.900c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100c-.3-.2-1.400-.5-2.600-1.600-1-.9-1.600-1.900-1.800-2.200-.2-.3 0-.5.100-.6l.5-.5c.2-.2.200-.3.300-.5.100-.2.100-.4 0-.5s-.7-1.700-1-2.300c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1 1-1 2.400 1 2.800 1.200 3c.1.200 2 3.100 4.900 4.300 2.900 1.200 2.900.8 3.400.8.500-.1 1.700-.7 1.900-1.400.2-.7.200-1.200.2-1.400-.1-.2-.3-.3-.6-.4z"/>
+    </svg>
+  </a>
 </body>
 </html>

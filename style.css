@@ -295,3 +295,192 @@ footer {
 .credit a:hover {
   opacity: 0.7;
 }
+/* ===== الأسعار ===== */
+.price {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--dark-gold);
+  margin: 6px 0;
+}
+
+.price del {
+  color: #b33a3a;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-left: 6px;
+  opacity: 0.85;
+}
+/* ===== الآية القرآنية ===== */
+.ayah-box {
+  max-width: 700px;
+  margin: 10px auto 30px;
+  padding: 18px 24px;
+  background: rgba(59, 36, 16, 0.35);
+  border: 2px solid var(--cream);
+  border-radius: 16px;
+}
+
+#hero .ayah {
+  font-family: 'Amiri', 'Cairo', serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 2.1;
+  color: var(--cream);
+  margin: 0;
+}
+
+#hero .ayah-source {
+  font-size: 1rem;
+  margin: 6px 0 0;
+  color: var(--cream);
+  opacity: 0.9;
+}
+#hero .ayah {
+  font-family: 'Amiri', 'Cairo', serif;
+}
+/* ===== منتج قريبًا ===== */
+.price.soon {
+  color: var(--dark-gold);
+  font-size: 1.2rem;
+}
+
+.order-btn.disabled {
+  background: #b9b9b9;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.order-btn.disabled:hover {
+  transform: none;
+}
+/* ===== ظهور تدريجي ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* تأخير بسيط بين الكروت عشان تظهر ورا بعض */
+.product:nth-child(3n+3).reveal { transition-delay: 0.15s; }
+.product:nth-child(3n+4).reveal { transition-delay: 0.3s; }
+
+/* احترام اللي بيفضل من غير حركة */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+/* ===== فاصل قطرات العسل ===== */
+.honey-divider {
+  position: relative;
+  height: 110px;
+  margin-top: -2px;
+  overflow: hidden;
+  background: var(--cream);
+}
+
+.honey-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: var(--dark-gold);
+  animation: wave-sway 6s ease-in-out infinite alternate;
+}
+
+/* القطرات */
+.drip {
+  position: absolute;
+  top: 40px;
+  width: 14px;
+  height: 20px;
+  background: var(--gold);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  opacity: 0;
+  animation: drip-fall 4s ease-in infinite;
+}
+
+.d1 { left: 12%; animation-delay: 0s; }
+.d2 { left: 31%; animation-delay: 1.2s; }
+.d3 { left: 52%; animation-delay: 2.4s; }
+.d4 { left: 71%; animation-delay: 0.6s; }
+.d5 { left: 88%; animation-delay: 1.8s; }
+
+@keyframes wave-sway {
+  from { transform: translateX(-12px) scaleX(1.03); }
+  to   { transform: translateX(12px) scaleX(1.03); }
+}
+
+@keyframes drip-fall {
+  0%   { transform: translateY(0) scale(0.6); opacity: 0; }
+  15%  { opacity: 1; transform: translateY(6px) scale(1); }
+  100% { transform: translateY(80px) scale(1); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .honey-wave, .drip { animation: none; }
+  .drip { display: none; }
+}
+/* ===== شارة الخصم ===== */
+.product {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #c0392b;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+/* ===== لمعان زر الطلب ===== */
+.order-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.order-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.55) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  animation: btn-shine 3.5s ease-in-out infinite;
+}
+
+/* زر "يتوفر قريبًا" ما يلمعش */
+.order-btn.disabled::after {
+  display: none;
+}
+
+@keyframes btn-shine {
+  0%   { left: -75%; }
+  45%  { left: 130%; }
+  100% { left: 130%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .order-btn::after { animation: none; display: none; }
+}
